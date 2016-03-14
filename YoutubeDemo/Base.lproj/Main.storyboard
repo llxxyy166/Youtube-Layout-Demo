@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ikh-yv-z4H">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Video Playing View Controller-->
+        <scene sceneID="bVa-GP-H8p">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ikh-yv-z4H" customClass="VideoPlayingViewController" customModule="YoutubeDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="5M0-P7-exr"/>
+                        <viewControllerLayoutGuide type="bottom" id="bdE-gO-P3K"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="wq1-OB-QpM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWH-NH-wp4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
+                                <connections>
+                                    <segue destination="CPN-Zm-ybO" kind="embed" id="ovi-Eq-Hac"/>
+                                </connections>
+                            </containerView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wLi-iD-g5x">
+                                <rect key="frame" x="0.0" y="240" width="600" height="360"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PdS-pK-XnQ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="66"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="5be-i1-Kfm">
+                                        <rect key="frame" x="0.0" y="66" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.77134120464324951" green="0.94632643461227417" blue="0.91413325071334839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="0bW-lk-OlS">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RWH-NH-wp4" secondAttribute="trailing" id="Via-cm-ZGE"/>
+                            <constraint firstItem="RWH-NH-wp4" firstAttribute="height" secondItem="wq1-OB-QpM" secondAttribute="height" multiplier="0.4" id="e4S-LO-fIG"/>
+                            <constraint firstItem="wLi-iD-g5x" firstAttribute="leading" secondItem="wq1-OB-QpM" secondAttribute="leading" id="ewZ-eT-tkR"/>
+                            <constraint firstItem="bdE-gO-P3K" firstAttribute="top" secondItem="wLi-iD-g5x" secondAttribute="bottom" id="l1T-VH-rDN"/>
+                            <constraint firstItem="wLi-iD-g5x" firstAttribute="top" secondItem="RWH-NH-wp4" secondAttribute="bottom" id="nIf-3G-GFz"/>
+                            <constraint firstItem="RWH-NH-wp4" firstAttribute="top" secondItem="wq1-OB-QpM" secondAttribute="top" id="nUL-fw-F89"/>
+                            <constraint firstAttribute="trailing" secondItem="wLi-iD-g5x" secondAttribute="trailing" id="rFC-S2-gR2"/>
+                            <constraint firstItem="RWH-NH-wp4" firstAttribute="leading" secondItem="wq1-OB-QpM" secondAttribute="leading" id="ujF-gy-m6B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="wLi-iD-g5x" id="zkV-Gx-wg8"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZB-3S-MIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="924" y="272"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="bpq-Rf-JZh">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="CPN-Zm-ybO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CjA-K6-fyi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607" y="230"/>
         </scene>
     </scenes>
 </document>

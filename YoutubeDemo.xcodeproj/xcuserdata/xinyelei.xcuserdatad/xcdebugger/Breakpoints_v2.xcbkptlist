@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YoutubeDemo/VideoPlayingViewController.swift"
+            timestampString = "479612013.066218"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "collectionView(_:viewForSupplementaryElementOfKind:atIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YoutubeDemo/VideoTitleView.swift"
+            timestampString = "479607718.91035"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "VideoTitleView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YoutubeDemo.VideoTitleView.descriptionLabel.getter : __ObjC.UILabel"
+                  moduleName = "YoutubeDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinyelei/Documents/xcode/YoutubeDemo/YoutubeDemo/VideoTitleView.swift"
+                  timestampString = "479598129.92122"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YoutubeDemo.VideoTitleView.descriptionLabel.setter : __ObjC.UILabel"
+                  moduleName = "YoutubeDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinyelei/Documents/xcode/YoutubeDemo/YoutubeDemo/VideoTitleView.swift"
+                  timestampString = "479598129.921452"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YoutubeDemo.VideoTitleView.descriptionLabel.materializeForSet : __ObjC.UILabel"
+                  moduleName = "YoutubeDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinyelei/Documents/xcode/YoutubeDemo/YoutubeDemo/VideoTitleView.swift"
+                  timestampString = "479598129.921584"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YoutubeDemo.VideoTitleView.init (YoutubeDemo.VideoTitleView.Type)(frame : __C.CGRect) -&gt; YoutubeDemo.VideoTitleView"
+                  moduleName = "YoutubeDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinyelei/Documents/xcode/YoutubeDemo/YoutubeDemo/VideoTitleView.swift"
+                  timestampString = "479598129.921707"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "718">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YoutubeDemo.VideoTitleView.init (YoutubeDemo.VideoTitleView.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;YoutubeDemo.VideoTitleView&gt;"
+                  moduleName = "YoutubeDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xinyelei/Documents/xcode/YoutubeDemo/YoutubeDemo/VideoTitleView.swift"
+                  timestampString = "479598129.921825"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "693">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YoutubeDemo/VideoPlayingViewController.swift"
+            timestampString = "479612013.066218"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
